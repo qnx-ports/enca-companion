@@ -4,7 +4,7 @@
 
 pkgname=enca
 pkgver=1.20
-pkgrel=${pkgrel:-0}
+pkgrel=0
 pkgdesc="Charset analyser and converter"
 url="https://cihar.com/software/enca/"
 arch="all"
@@ -35,7 +35,6 @@ package() {
     make DESTDIR="$pkgdir" install
 }
 
-options="$options ${DISABLE_CHECK:+!check}"
 sha512sums="
 bc70f88c0d494ba1ba45792c0b33c36dd5f5d463a34ddb049727ae6a763cd21e7c9602686fe6bc0cbe914c094451b2ad8b461928dc512ab43ada95ae83615690  enca-1.20.tar.xz
 "
